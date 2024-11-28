@@ -1,0 +1,125 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Todo Container */
+div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: calc(100% - 90px); /* To make space for the button */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #5c9bfd;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #5c9bfd;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #4a86c1;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+}
+
+li span {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+li button {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+li button:hover {
+  background-color: #d32f2f;
+}
+
+/* Completed Task Styles */
+li span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li span.completed:hover {
+  color: #888;
+}
+
+/* Edit Task */
+li span.editing {
+  background-color: #ffeb3b;
+  padding: 5px;
+  border-radius: 4px;
+}
